@@ -18,6 +18,7 @@ export class MongoS3Client {
 			await this.client.connect();
 			const db = this.client.db(this.bucketName);
 			this.bucket = new GridFSBucket(db);
+			console.log("Mongo S3 client connected!");
 		} catch (error) {
 			console.log(error.message);
 			return null;
@@ -73,7 +74,6 @@ export class MongoS3Client {
 					reject({ error: "File not found" });
 				});
 				const data = downloadStream.pipe(res);
-				console.log("resolving buffer");
 				resolve(data);
 			});
 		} catch (error) {
