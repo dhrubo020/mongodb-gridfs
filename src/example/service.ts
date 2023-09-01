@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { MongoS3Client } from "../gfs";
+import { MongoS3Client } from "..";
 const { MONGO_URI, BUCKET_NAME } = process.env;
 
 const uri = MONGO_URI || "mongodb://127.0.0.1:27017";

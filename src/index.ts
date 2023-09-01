@@ -1,5 +1,5 @@
 import { Response } from "express";
-import { IUploadParams, IUploadResponse } from "interfaces";
+import { IUploadParams, IUploadResponse } from "./interfaces";
 import { GridFSBucket, MongoClient } from "mongodb";
 
 export class MongoS3Client {

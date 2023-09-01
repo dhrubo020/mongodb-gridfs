@@ -1,18 +1,20 @@
 {
 	"name": "mongo-s3-client",
-	"version": "0.0.2",
+	"version": "0.0.5",
 	"description": "Simple Storage Service for Mongodb",
 	"repository": {
 		"type": "git",
 		"url": ""
 	},
+	"main": "./dist/index.js",
 	"author": {
 		"name": "dhrubo",
 		"url": "https://www.linkedin.com/in/dnsdhrubo/"
 	},
 	"license": "UNLICENSED",
-	"types": "./dist/*.d.ts",
+	"types": "./dist/index.d.ts",
 	"scripts": {
+		"build": "rimraf dist && npx tsc",
 		"start": " npx nodemon -w src -e ts --exec \"npx tsc && node dist/example/index.js\""
 	},
 	"dependencies": {
