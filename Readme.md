@@ -70,7 +70,3 @@ async function retriveFile(req: Request, res: Response) {
 ## Authors
 
 -   **Dhrubo** - [Dhrubo](https://github.com/dhrubo020)
-
-## License
-
-[MIT License]
