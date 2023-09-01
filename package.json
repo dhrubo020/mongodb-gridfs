@@ -1,6 +1,6 @@
 {
 	"name": "mongo-s3-client",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Simple Storage Service for Mongodb",
 	"repository": {
 		"type": "git",
@@ -11,7 +11,6 @@
 		"url": "https://www.linkedin.com/in/dnsdhrubo/"
 	},
 	"license": "UNLICENSED",
-	"main": "dist/example/index.js",
 	"scripts": {
 		"start": " npx nodemon -w src -e ts --exec \"npx tsc && node dist/example/index.js\""
 	},
@@ -31,5 +30,9 @@
 		"nodemon": "^3.0.1",
 		"ts-node": "^10.9.1",
 		"typescript": "^5.2.2"
-	}
+	},
+	"files": [
+		"dist/*.js",
+		"dist/*.ts"
+	]
 }
