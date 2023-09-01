@@ -1,15 +1,35 @@
 {
+	"name": "mongo-s3-client",
+	"version": "0.0.0",
+	"description": "Simple Storage Service for Mongodb",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": {
+		"name": "dhrubo",
+		"url": "https://www.linkedin.com/in/dnsdhrubo/"
+	},
+	"license": "UNLICENSED",
+	"main": "dist/example/index.js",
 	"scripts": {
-		"start": "node index.js",
-		"start:dev": "nodemon index.js"
+		"start": " npx nodemon -w src -e ts --exec \"npx tsc && node dist/example/index.js\""
 	},
 	"dependencies": {
+		"dotenv": "^16.3.1",
 		"express": "^4.18.2",
 		"fs": "^0.0.1-security",
 		"gridfs-stream": "^1.1.1",
-		"mongodb": "^5.8.1",
+		"mongodb": "^6.0.0",
 		"mongoose": "^7.4.5",
-		"multer": "^1.4.5-lts.1",
-		"nodemon": "^3.0.1"
+		"multer": "^1.4.5-lts.1"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.17",
+		"@types/mongodb": "^4.0.7",
+		"@types/multer": "^1.4.7",
+		"nodemon": "^3.0.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2"
 	}
 }
