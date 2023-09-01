@@ -1,10 +1,10 @@
 {
 	"name": "mongo-s3-client",
-	"version": "0.0.5",
+	"version": "0.0.7",
 	"description": "Simple Storage Service for Mongodb",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "git@github.com:dhrubo020/mongodb-gridfs.git"
 	},
 	"main": "./dist/index.js",
 	"author": {
