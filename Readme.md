@@ -69,6 +69,10 @@ async function retriveFile(req: Request, res: Response) {
 }
 ```
 
+## Working example
+
+https://github.com/dhrubo020/mongo-s3-client-example
+
 ## Authors
 
 -   **Dhrubo** - [Dhrubo](https://github.com/dhrubo020)
