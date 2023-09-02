@@ -68,6 +68,8 @@ async function retriveFile(req: Request, res: Response) {
 	return await client.getFile(key, res);
 }
 ```
+## Working example
+https://github.com/dhrubo020/mongo-s3-client-example
 
 ## Authors
 
